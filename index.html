@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerald De Chavez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Gerald De Chavez
+            <p>Aspiring Software Engineer</p>
+        </div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Gerald De Chavez</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/Gerald-profile-picture.png" alt="Gerald De Chavez profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Gerald De Chavez</h1>
+            <p class="section__text__p2">A 23-year-old Web Developer based in Philippines.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assests/De-Chavez_Gerald_M.-Resume.pdf')">Download Resume
+            </button>
+            <button class="btn btn-color-1" 
+            onclick="location.href='./#contact'">Contact info
+            </button>   
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="My linkedin profile"
+                class="icon" 
+                onclick="location.href='//www.linkedin.com/in/gerald-de-chavez-b8829824b/'"/>
+                <img src="./assests/github.png" alt="My Github profile"
+                class="icon" 
+                onclick="location.href='//github.com/geerraalld'"/>
+            </div>
+        </divc>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assests/Gerald-about-me-pic.jpg" 
+                alt="profile picture"
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" 
+                        alt="Experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>3 Months Intership <br/>Graphic Art Designer</p> 
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" 
+                        alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Computer Science <br/>Bachelor's Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello, I am <b>Gerald De Chavez</b> residing right now in Mandaluyong City, 
+                        I possess practical hands-on experience in development and design. 
+                        As a motivated and organized individual keen on learning through mentorship, 
+                        I firmly agree that the education should continues everyday for learning. 
+                        This is why I actively pursue chances to enhance my skills, actively searching for bootcamp work, 
+                        internships and mentorship, and getting more online courses align with my degree. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"/>
+    </section>
+    <!-- <section id="experience">
+        <p class="section__text__p1">Explore My</p> 
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Graphic Art Designer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>VideoEditing</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Inforgraphics</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Poster</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Animations</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article> 
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Game and Web Delopment</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>C#</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'"/> -->
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Sample Designs</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-project-container color-container">
+                    <div class="picture-container">
+                        <img src="./assests/Foolishclever.png" 
+                        alt="Foolishclever App"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Foolishclever App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='assests/FCapp.pdf'"> Sample Design
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="picture-container">
+                        <img src="./assests/FoolishcleverWeb.png" 
+                        alt="project-2"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">FoolishClever WebSite</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='assests/FCwebsite.pdf'"> Sample Design</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="picture-container">
+                        <img src="./assests/DiscoverPH.png" 
+                        alt="project-3"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">DiscoverPH Landingpage</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='assests/DiscoverPH.pdf'"> Sample Design
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" 
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:examplemail.com">
+                    geraldmdechavez@gmail.com</a></p>
+            </div>
+                <div class="contact-info-container">
+                    <img src="./assests/linkedin.png" 
+                    alt="linkedin icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="//www.linkedin.com/in/gerald-de-chavez-b8829824b/">Gerald De Chavez</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Gerald De Chavez. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
